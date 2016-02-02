@@ -1,5 +1,18 @@
 This directory is the main directory for software
-developed by the Bolouri Group at the Institute for Systems Biology.
+developed by Stephen Ramsey at the Institute for Systems Biology.
+
+This program is distributed in the hope that it will be useful, but WITHOUT
+ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more
+details.
+
+You should have received a copy of the GNU General Public License along with
+this program; if not, write to the Free Software Foundation, Inc., 51
+Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+
+Copyright Stephen Ramsey, Institute for Systems Biology
+
+----------------------------------------------------------------
 
 The following subdirectories can be found in this
 directory:
@@ -12,28 +25,33 @@ directory:
 
           For more information, read the "apps/README.txt" file.
 
-  java:   The java source tree.  All Java code is
-          contained in this tree.  
+  config: Configuration data that is not specific to a particular
+          application, is placed in this directory.
 
-          For more information, read the "java/README.txt" file.
+          For more information, read the "config/README.txt" file.
 
   docs:   Documentation that is not specific to a particular
           application, is placed in this directory.
 
           For more information, read the "docs/README.txt" file.
 
-  config: Configuration data that is not specific to a particular
-          application, is placed in this directory.
+  images: image files used for the project website
+  
+  java:   The java source tree.  All Java code is
+          contained in this tree.  
 
-          For more information, read the "config/README.txt" file.
+          For more information, read the "java/README.txt" file.
+
+  tools:  For software tools that aren't really an integrated
+          "application".  
+
+Temporary directories that are created in the build tree:
 
   classes: Contains compiled java classes (created by build system)
 
   build:  Temporary directory created by build system, to hold 
           things like built Jar files, Web content, etc.
 
-  tools:  For software tools that aren't really an integrated
-          "application".  
 
 The build system used underneath this directory tree is "Ant"
 (http://ant.apache.org).  Invoking "Ant" is just like invoking
